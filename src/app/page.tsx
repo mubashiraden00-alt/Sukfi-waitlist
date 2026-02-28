@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 import { supabase } from "../lib/supabaseClient";
+import { HowItWorks } from "../components/HowItWorks";
+import { Mission } from "../components/Mission";
+import { Footer } from "../components/Footer";
+
 export default function SukfiWaitlist() {
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
@@ -180,6 +184,12 @@ export default function SukfiWaitlist() {
         </motion.div>
 
       </div>
+      {/* Security & How It Works Section */}
+      <HowItWorks />
+      {/* Founder's Mission Note */}
+      <Mission />
+      {/* Human Footer & Legal Links */}
+      <Footer />
     </main>
   );
 }
