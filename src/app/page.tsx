@@ -120,34 +120,36 @@ export default function SukfiWaitlist() {
           className="flex flex-col gap-4 sm:flex-row max-w-md mx-auto mt-8"
         >
           {!joined ? (
-            <div className="flex flex-col items-center w-full max-w-xl mx-auto mt-12 gap-8">
-              {/* The Centered Signup Form */}
+            <div className="flex flex-col items-center w-full max-w-xl mx-auto mt-16 gap-8">
+              
+              {/* 1. Centered Form Group */}
               <form 
-                className="flex flex-col sm:flex-row w-full gap-3 justify-center" 
+                className="flex flex-col sm:flex-row w-full gap-3 justify-center items-center" 
                 onSubmit={handleJoinWaitlist}
               >
                 <input 
                   name="email"
                   type="email" 
                   placeholder="Enter your email" 
-                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow max-w-sm outline-none focus:border-emerald-500/50 transition-all text-white text-center sm:text-left"
+                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 w-full sm:w-80 outline-none focus:border-emerald-500/50 transition-all text-white text-center sm:text-left"
                   required
                 />
                 <button 
                   type="submit"
-                  className="bg-[#00FF85] text-[#050505] font-bold px-10 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all whitespace-nowrap"
+                  className="bg-[#00FF85] text-[#050505] font-bold px-10 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all whitespace-nowrap w-full sm:w-auto"
                 >
                   Join Waitlist
                 </button>
               </form>
 
-              {/* The Aligned Trust Line */}
-              <div className="flex items-center justify-center gap-2 text-slate-500 opacity-70">
-                <span className="text-sm shrink-0">🔒</span>
-                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-center">
-                  Bank-level encryption • Read-only access • No transactions stored
+              {/* 2. High-Visibility Trust Line (Aligned & Brighter) */}
+              <div className="flex items-center justify-center gap-3 text-slate-300">
+                <span className="text-emerald-500 text-lg shrink-0">🔒</span>
+                <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
+                  Bank-level encryption <span className="mx-2 text-slate-600">•</span> Read-only access <span className="mx-2 text-slate-600">•</span> No transactions stored
                 </p>
               </div>
+              
             </div>
           ) : (
             <motion.div 
