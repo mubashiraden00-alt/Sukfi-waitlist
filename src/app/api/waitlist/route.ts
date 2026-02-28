@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
   // 2. Send the Founding Member Email
   await resend.emails.send({
-    from: 'Sukfi <onboarding@resend.dev>',
+    from: 'Sukfi <hello@sukfi.com>',
     to: email,
     subject: '🛡️ You are a Founding Member!',
     html: `<h1>Welcome to Sukfi</h1><p>You've secured 2 weeks of Premium for being in the first 500!</p>`
