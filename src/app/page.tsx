@@ -100,8 +100,7 @@ export default function SukfiWaitlist() {
           transition={{ delay: 0.2 }}
           className="text-lg text-slate-400 leading-relaxed max-w-lg mx-auto"
         >
-          The first <strong>Spiritual Wealth Manager</strong>. We scan your bank, 
-          detect impure transactions, and calculate your <span className="text-white font-semibold">Spiritual Net Worth</span>.
+          A halal finance insights tool that helps you understand and track the purity of your finances.
         </motion.p>
 
         {/* Value Grid */}
@@ -148,19 +147,10 @@ export default function SukfiWaitlist() {
 
               {/* 2. High-Visibility Trust Line (Aligned & Brighter) */}
               <div className="flex items-center justify-center gap-3 text-slate-300">
-                <span className="text-emerald-500 text-lg shrink-0">
-                  {/* Shield icon (SVG, no external dependency) */}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
-                  </svg>
-                </span>
-                <div className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
-                  SECURELY CONNECT VIA <span className="text-white">PLAID</span>
-                  <span className="mx-2 text-slate-600">•</span>
-                  BANK-GRADE ENCRYPTION
-                  <span className="mx-2 text-slate-600">•</span>
-                  READ-ONLY ACCESS
-                </div>
+                <span className="text-emerald-500 text-lg shrink-0">🔒</span>
+                <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
+                  Bank-level encryption <span className="mx-2 text-slate-600">•</span> Read-only access <span className="mx-2 text-slate-600">•</span> No transactions stored
+                </p>
               </div>
               
             </div>
