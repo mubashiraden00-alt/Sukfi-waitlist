@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         <section className="mb-12">
           <h2 className="text-white font-bold mb-3">3. Contact & Location</h2>
           <p className="text-sm leading-7">
-            Sukfi Technologies is based in **[Your City, State/Country]**. For any questions regarding your data or our purification logic, please contact our team at:
+            Sukfi Technologies is based in Minnesota Saint Paul. For any questions regarding your data or our purification logic, please contact our team at:
             <br />
             <span className="text-emerald-400 font-mono mt-2 block italic">hello@sukfi.com</span>
           </p>
