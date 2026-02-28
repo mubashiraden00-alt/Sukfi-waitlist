@@ -120,14 +120,17 @@ export default function SukfiWaitlist() {
           className="flex flex-col gap-4 sm:flex-row max-w-md mx-auto mt-8"
         >
           {!joined ? (
-            <div className="max-w-md mx-auto w-full flex flex-col items-center gap-6 mt-12">
-              {/* The Form Group */}
-              <form className="flex flex-col sm:flex-row w-full gap-3" onSubmit={handleJoinWaitlist}>
+            <div className="flex flex-col items-center w-full max-w-md mx-auto mt-12 gap-6">
+              {/* Input & Button Container */}
+              <form 
+                className="flex flex-col sm:flex-row w-full gap-3" 
+                onSubmit={handleJoinWaitlist}
+              >
                 <input 
                   name="email"
                   type="email" 
                   placeholder="Enter your email" 
-                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow outline-none focus:border-emerald-500/50 transition-all text-white"
+                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow outline-none focus:border-emerald-500/50 transition-all text-white text-center sm:text-left"
                   required
                 />
                 <button 
@@ -139,10 +142,12 @@ export default function SukfiWaitlist() {
               </form>
 
               {/* The Trust Line - Now properly centered below */}
-              <p className="text-xs text-slate-500 flex items-center justify-center gap-2 max-w-[280px] text-center leading-relaxed">
-                <span className="text-emerald-500">🔒</span> 
-                Bank-level encryption. Read-only access. We never store your login or transactions.
-              </p>
+              <div className="flex items-center justify-center gap-2 text-slate-500 opacity-60">
+                <span className="text-xs">🔒</span>
+                <p className="text-[10px] uppercase tracking-widest text-center">
+                  Bank-level encryption. Read-only access. No transactions stored.
+                </p>
+              </div>
             </div>
           ) : (
             <motion.div 
