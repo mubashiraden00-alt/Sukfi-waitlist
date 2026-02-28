@@ -100,6 +100,18 @@ export default function SukfiWaitlist() {
           detect impure transactions, and calculate your <span className="text-white font-semibold">Spiritual Net Worth</span>.
         </motion.p>
 
+        {/* Value Grid */}
+        <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-400">
+          <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
+            <span className="text-emerald-500 font-bold mb-1">FREE ACCESS</span>
+            <span>First 500 users only</span>
+          </div>
+          <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
+            <span className="text-emerald-500 font-bold mb-1">INFLUENCE</span>
+            <span>Shape the Roadmap</span>
+          </div>
+        </div>
+
         {/* Input Form */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -124,6 +136,10 @@ export default function SukfiWaitlist() {
                 Join Waitlist <ArrowRight size={18} />
               </button>
             </form>
+            <p className="mt-4 text-xs text-slate-500 flex items-center justify-center gap-2">
+              <span className="text-emerald-500">🔒</span> 
+              Bank-level encryption. Read-only access. We never store your login or transactions.
+            </p>
           ) : (
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }}
