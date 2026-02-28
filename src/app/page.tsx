@@ -148,10 +148,19 @@ export default function SukfiWaitlist() {
 
               {/* 2. High-Visibility Trust Line (Aligned & Brighter) */}
               <div className="flex items-center justify-center gap-3 text-slate-300">
-                <span className="text-emerald-500 text-lg shrink-0">🔒</span>
-                <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
-                  Bank-level encryption <span className="mx-2 text-slate-600">•</span> Read-only access <span className="mx-2 text-slate-600">•</span> No transactions stored
-                </p>
+                <span className="text-emerald-500 text-lg shrink-0">
+                  {/* Shield icon (SVG, no external dependency) */}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                  </svg>
+                </span>
+                <div className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
+                  SECURELY CONNECT VIA <span className="text-white">PLAID</span>
+                  <span className="mx-2 text-slate-600">•</span>
+                  BANK-GRADE ENCRYPTION
+                  <span className="mx-2 text-slate-600">•</span>
+                  READ-ONLY ACCESS
+                </div>
               </div>
               
             </div>
