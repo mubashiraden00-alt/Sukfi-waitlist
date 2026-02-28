@@ -26,6 +26,22 @@ export async function POST(req: Request) {
   </div>
 
   <p style="color: #94a3b8; font-size: 12px;">Reply <strong>\"SALAM\"</strong> to this email to lock in your spot and verify your status.</p>
+  <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #1a1a1a;">
+    <p style="color: white; font-weight: bold; margin: 0; font-size: 14px;">Mubashir Aden</p>
+    <p style="color: #00FF85; margin: 2px 0 0 0; font-size: 12px; font-weight: 500;">Founder & CEO, Sukfi</p>
+    
+    <div style="margin-top: 20px;">
+      <p style="color: #475569; font-size: 11px; line-height: 1.6; margin: 0;">
+        © 2026 Sukfi. All rights reserved.<br />
+        You received this because you joined the Sukfi Founding Member waitlist.
+      </p>
+      <p style="color: #475569; font-size: 11px; margin-top: 10px;">
+        <a href="https://sukfi.com" style="color: #00FF85; text-decoration: none;">sukfi.com</a> 
+        <span style="margin: 0 5px;">•</span> 
+        Spiritual Wealth, Managed.
+      </p>
+    </div>
+  </div>
 </div>`
   })
 
