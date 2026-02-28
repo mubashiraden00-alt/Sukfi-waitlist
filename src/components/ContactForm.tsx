@@ -1,4 +1,5 @@
 
+
 'use client';
 import { useState } from 'react';
 
@@ -9,7 +10,6 @@ export const ContactForm = () => {
     e.preventDefault();
     setStatus('sending');
     const formData = new FormData(e.currentTarget);
-    
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -24,58 +24,25 @@ export const ContactForm = () => {
   }
 
   return (
-    <div className="bg-zinc-950/50 backdrop-blur-xl border border-white/10 p-8 rounded-2xl shadow-2xl max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-white mb-6 text-center">Contact Support</h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-5">
-        {/* Name Input */}
-        <div>
-          <label className="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Full Name</label>
+    <div className="bg-[#050B15]/80 backdrop-blur-2xl border border-white/5 p-10 rounded-[24px] shadow-[0_0_50px_rgba(0,255,148,0.05)] max-w-lg mx-auto">
+      <h2 className="text-4xl font-bold text-white mb-2 text-center tracking-tight">Get in Touch</h2>
+      <p className="text-gray-400 text-center mb-8 text-sm">We're here to help with your purification journey.</p>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-2">
+          <label className="text-[10px] uppercase tracking-[0.3em] text-gray-500 ml-1 font-bold">Your Name</label>
           <input 
             name="name" 
             placeholder="Mubashir" 
-            required 
-            className="w-full bg-white/5 border border-white/10 p-3 rounded-lg text-white placeholder:text-gray-600 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all" 
+            className="w-full bg-[#0A101C] border border-white/10 p-4 rounded-xl text-white placeholder:text-gray-700 focus:border-brand-green/50 focus:ring-0 transition-all outline-none" 
           />
         </div>
-
-        {/* Email Input */}
-        <div>
-          <label className="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Email Address</label>
-          <input 
-            name="email" 
-            type="email" 
-            placeholder="servantofallah@gmail.com" 
-            required 
-            className="w-full bg-white/5 border border-white/10 p-3 rounded-lg text-white placeholder:text-gray-600 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all" 
-          />
-        </div>
-
-        {/* Message Input */}
-        <div>
-          <label className="text-xs uppercase tracking-widest text-gray-500 mb-2 block">Message</label>
-          <textarea 
-            name="message" 
-            placeholder="How can we help with your purification journey?" 
-            required 
-            rows={4} 
-            className="w-full bg-white/5 border border-white/10 p-3 rounded-lg text-white placeholder:text-gray-600 focus:border-brand-green focus:ring-1 focus:ring-brand-green outline-none transition-all resize-none" 
-          />
-        </div>
-
-        {/* Submit Button */}
+        {/* MATCHING THE HERO BUTTON */}
         <button 
           disabled={status === 'sending'} 
-          className="w-full bg-brand-green text-black font-bold py-4 rounded-lg hover:brightness-110 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-tighter"
+          className="w-full bg-[#00FF94] text-[#050B15] font-extrabold py-4 rounded-full hover:shadow-[0_0_30px_rgba(0,255,148,0.4)] transition-all active:scale-[0.98] uppercase tracking-widest text-xs"
         >
-          {status === 'sending' ? 'Sending...' : status === 'success' ? '✓ Message Received' : 'Send Message'}
+          {status === 'sending' ? 'Sending...' : 'Send Message'}
         </button>
-
-        {status === 'error' && (
-          <p className="text-red-400 text-xs text-center font-medium animate-pulse">
-            Error sending message. Please try again.
-          </p>
-        )}
       </form>
     </div>
   );
