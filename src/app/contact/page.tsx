@@ -1,56 +1,53 @@
 'use client';
-import { useState } from 'react';
 
 export default function ContactPage() {
-  const [status, setStatus] = useState('idle');
-
   return (
-    <div className="min-h-screen bg-[#050B15] flex flex-col items-center justify-center p-6 font-sans">
-      <div className="w-full max-w-md bg-[#0A101C] border border-white/5 p-10 rounded-[32px] shadow-2xl">
+    <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-6">
+      <div className="w-full max-w-md bg-slate-900 border border-white/5 p-10 rounded-3xl shadow-2xl">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">Get in Touch</h1>
-          <p className="text-gray-500 text-sm">We're here to help with your purification journey.</p>
+          <p className="text-slate-500 text-sm">We are here to help with your purification journey.</p>
         </div>
         <form className="space-y-6">
-          {/* BOX 1: NAME */}
           <div className="space-y-2">
-            <label className="text-[10px] uppercase tracking-widest text-gray-500 ml-1 font-bold">Your Name</label>
+            <label className="text-xs uppercase tracking-widest text-slate-500 ml-1 font-bold">Your Name</label>
             <input 
               name="name"
-              placeholder="Mubashir" 
-              className="w-full bg-[#050B15] border border-white/10 p-4 rounded-2xl text-white placeholder:text-gray-700 focus:border-[#00FF94] outline-none transition-all" 
+              placeholder="Name" 
+              className="w-full bg-slate-950 border border-white/10 p-4 rounded-2xl text-white placeholder:text-slate-800 focus:border-emerald-400 outline-none transition-all" 
             />
           </div>
-          {/* BOX 2: EMAIL */}
           <div className="space-y-2">
-            <label className="text-[10px] uppercase tracking-widest text-gray-500 ml-1 font-bold">Email Address</label>
+            <label className="text-xs uppercase tracking-widest text-slate-500 ml-1 font-bold">Email Address</label>
             <input 
               name="email"
               type="email"
               placeholder="name@email.com" 
-              className="w-full bg-[#050B15] border border-white/10 p-4 rounded-2xl text-white placeholder:text-gray-700 focus:border-[#00FF94] outline-none transition-all" 
+              className="w-full bg-slate-950 border border-white/10 p-4 rounded-2xl text-white placeholder:text-slate-800 focus:border-emerald-400 outline-none transition-all" 
             />
           </div>
-          {/* BOX 3: THE QUESTION */}
           <div className="space-y-2">
-            <label className="text-[10px] uppercase tracking-widest text-gray-500 ml-1 font-bold">Your Question</label>
+            <label className="text-xs uppercase tracking-widest text-slate-500 ml-1 font-bold">Your Question</label>
             <textarea 
               name="message"
               rows={4}
               placeholder="How can we help?" 
-              className="w-full bg-[#050B15] border border-white/10 p-4 rounded-2xl text-white placeholder:text-gray-700 focus:border-[#00FF94] outline-none transition-all resize-none" 
+              className="w-full bg-slate-950 border border-white/10 p-4 rounded-2xl text-white placeholder:text-slate-800 focus:border-emerald-400 outline-none transition-all resize-none" 
             />
           </div>
           <button 
             type="submit"
-            className="w-full bg-[#00FF94] text-[#050B15] font-black py-4 rounded-full hover:opacity-90 transition-all uppercase tracking-widest text-xs mt-4 active:scale-95"
+            className="w-full bg-emerald-400 text-slate-950 font-black py-4 rounded-full hover:brightness-110 active:scale-95 transition-all uppercase tracking-widest text-xs mt-4"
           >
             Send Message
           </button>
         </form>
       </div>
-      <a href="/" className="mt-8 text-gray-600 text-xs hover:text-white transition uppercase tracking-widest">
-        Back to Sukfi
+      {/* NEON BUBBLE: Removed the arrow symbol to prevent Unicode errors */}
+      <a href="/" className="mt-12 flex items-center gap-2 px-8 py-3 bg-emerald-400/10 border border-emerald-400/20 rounded-full hover:bg-emerald-400/20 transition-all">
+        <span className="text-emerald-400 text-xs uppercase tracking-widest font-black">
+          Back to Sukfi
+        </span>
       </a>
     </div>
   );
