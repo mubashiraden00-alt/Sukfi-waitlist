@@ -17,28 +17,41 @@ export async function POST(req: Request) {
     to: email,
     subject: '🛡️ You are a Founding Member!',
     html: `<div style="font-family: sans-serif; max-width: 600px; margin: auto; padding: 40px; background: #050505; color: white; border-radius: 20px; border: 1px solid #1a1a1a;">
-  <h1 style="color: #00FF85; font-size: 24px;">Welcome, Founding Member.</h1>
-  <p style="color: #94a3b8; line-height: 1.6;">You are officially in the first 500. This isn't just a waitlist; you're helping us build the future of <strong>Spiritual Wealth</strong>.</p>
+  <h1 style="color: #00FF85; font-size: 22px; margin-bottom: 20px;">Welcome — you're in.</h1>
   
-  <div style="background: rgba(0,255,133,0.1); border: 1px solid #00FF85; padding: 20px; border-radius: 12px; margin: 25px 0;">
-    <p style="margin: 0; color: #00FF85; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Your Reward</p>
-    <p style="margin: 5px 0 0 0; font-size: 18px;">🎁 2 Weeks of Premium Automation</p>
+  <p style="color: #94a3b8; line-height: 1.6; font-size: 15px;">
+    You're officially one of the first 500 Sukfi Founding Members. This isn't just a waitlist — you're helping us build the future of spiritual wealth management.
+  </p>
+
+  <div style="background: rgba(0,255,133,0.05); border: 1px solid #00FF85; padding: 25px; border-radius: 12px; margin: 30px 0;">
+    <p style="margin: 0 0 10px 0; color: #00FF85; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">Your Founding Member Reward</p>
+    <p style="margin: 0; font-size: 18px; font-weight: bold;">🎁 2 Weeks of Premium Automation</p>
+    <p style="margin: 5px 0 0 0; color: #94a3b8; font-size: 13px;">(automatic halal income tracking + zakat calculation when we launch)</p>
   </div>
 
-  <p style="color: #94a3b8; font-size: 12px;">Reply <strong>\"SALAM\"</strong> to this email to lock in your spot and verify your status.</p>
-  <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #1a1a1a;">
-    <p style="color: white; font-weight: bold; margin: 0; font-size: 14px;">Mubashir Aden</p>
-    <p style="color: #00FF85; margin: 2px 0 0 0; font-size: 12px; font-weight: 500;">Founder & CEO, Sukfi</p>
+  <p style="color: #ffffff; font-weight: bold; margin-bottom: 10px;">As a founding member, you'll also get:</p>
+  <ul style="color: #94a3b8; padding-left: 20px; line-height: 1.8; margin-bottom: 25px;">
+    <li>Early access to Sukfi</li>
+    <li>Priority beta testing</li>
+    <li>Influence over new features</li>
+  </ul>
+
+  <p style="color: #94a3b8; font-size: 14px; margin-bottom: 30px;">
+    To confirm your spot, simply reply <strong style="color: #00FF85;">SALAM</strong> to this email.<br />
+    We'll notify you as soon as testing begins.
+  </p>
+
+  <p style="color: #94a3b8; font-size: 14px; margin-bottom: 40px;">Thank you for helping us build something beneficial for the Ummah.</p>
+
+  <div style="padding-top: 20px; border-top: 1px solid #1a1a1a;">
+    <p style="color: white; font-weight: bold; margin: 0; font-size: 15px;">— Mubashir Aden</p>
+    <p style="color: #00FF85; margin: 2px 0 0 0; font-size: 13px;">Founder & CEO, Sukfi</p>
     
-    <div style="margin-top: 20px;">
-      <p style="color: #475569; font-size: 11px; line-height: 1.6; margin: 0;">
-        © 2026 Sukfi. All rights reserved.<br />
-        You received this because you joined the Sukfi Founding Member waitlist.
-      </p>
-      <p style="color: #475569; font-size: 11px; margin-top: 10px;">
+    <div style="margin-top: 25px; color: #475569; font-size: 11px;">
+      <p style="margin: 0;">© 2026 Sukfi. All rights reserved.</p>
+      <p style="margin: 5px 0 0 0;">
         <a href="https://sukfi.com" style="color: #00FF85; text-decoration: none;">sukfi.com</a> 
-        <span style="margin: 0 5px;">•</span> 
-        Spiritual Wealth, Managed.
+        <span style="margin: 0 5px;">•</span> Spiritual Wealth, Managed.
       </p>
     </div>
   </div>
