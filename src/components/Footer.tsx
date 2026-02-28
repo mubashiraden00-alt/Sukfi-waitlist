@@ -9,7 +9,7 @@ export const Footer = () => (
       <div className="flex gap-8 text-gray-400 text-sm">
         <a href="/privacy" className="hover:text-brand-green transition">Privacy Policy</a>
         <a href="/terms" className="hover:text-brand-green transition">Terms of Service</a>
-        <a href="mailto:hello@sukfi.com" className="hover:text-brand-green transition">Contact</a>
+        <a href="/contact" className="hover:text-brand-green transition">Contact Support</a>
       </div>
 
       <div className="text-xs text-gray-600 text-center md:text-right">
