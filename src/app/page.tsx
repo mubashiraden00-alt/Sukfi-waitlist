@@ -120,26 +120,28 @@ export default function SukfiWaitlist() {
           className="flex flex-col gap-4 sm:flex-row max-w-md mx-auto mt-8"
         >
           {!joined ? (
-            <form onSubmit={handleJoinWaitlist} className="flex flex-col sm:flex-row flex-1 gap-4">
-              <input 
-                name="email"
-                type="email" 
-                placeholder="enter@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] transition-all placeholder:text-slate-600"
-              />
-              <button 
-                type="submit"
-                className="bg-[#10B981] hover:bg-[#059669] text-[#0f172a] font-bold rounded-lg px-6 py-3 transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)]"
-              >
-                Join Waitlist <ArrowRight size={18} />
-              </button>
-            </form>
-            <p className="mt-4 text-xs text-slate-500 flex items-center justify-center gap-2">
-              <span className="text-emerald-500">🔒</span> 
-              Bank-level encryption. Read-only access. We never store your login or transactions.
-            </p>
+            <>
+              <form onSubmit={handleJoinWaitlist} className="flex flex-col sm:flex-row flex-1 gap-4">
+                <input 
+                  name="email"
+                  type="email" 
+                  placeholder="enter@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] transition-all placeholder:text-slate-600"
+                />
+                <button 
+                  type="submit"
+                  className="bg-[#10B981] hover:bg-[#059669] text-[#0f172a] font-bold rounded-lg px-6 py-3 transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)]"
+                >
+                  Join Waitlist <ArrowRight size={18} />
+                </button>
+              </form>
+              <p className="mt-4 text-xs text-slate-500 flex items-center justify-center gap-2">
+                <span className="text-emerald-500">🔒</span> 
+                Bank-level encryption. Read-only access. We never store your login or transactions.
+              </p>
+            </>
           ) : (
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }}
