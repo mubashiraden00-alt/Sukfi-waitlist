@@ -120,32 +120,32 @@ export default function SukfiWaitlist() {
           className="flex flex-col gap-4 sm:flex-row max-w-md mx-auto mt-8"
         >
           {!joined ? (
-            <div className="flex flex-col items-center w-full max-w-md mx-auto mt-12 gap-6">
-              {/* Input & Button Container */}
+            <div className="flex flex-col items-center w-full max-w-xl mx-auto mt-12 gap-8">
+              {/* The Centered Signup Form */}
               <form 
-                className="flex flex-col sm:flex-row w-full gap-3" 
+                className="flex flex-col sm:flex-row w-full gap-3 justify-center" 
                 onSubmit={handleJoinWaitlist}
               >
                 <input 
                   name="email"
                   type="email" 
                   placeholder="Enter your email" 
-                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow outline-none focus:border-emerald-500/50 transition-all text-white text-center sm:text-left"
+                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow max-w-sm outline-none focus:border-emerald-500/50 transition-all text-white text-center sm:text-left"
                   required
                 />
                 <button 
                   type="submit"
-                  className="bg-[#00FF85] text-[#050505] font-bold px-8 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all whitespace-nowrap"
+                  className="bg-[#00FF85] text-[#050505] font-bold px-10 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all whitespace-nowrap"
                 >
                   Join Waitlist
                 </button>
               </form>
 
-              {/* The Trust Line - Now properly centered below */}
-              <div className="flex items-center justify-center gap-2 text-slate-500 opacity-60">
-                <span className="text-xs">🔒</span>
-                <p className="text-[10px] uppercase tracking-widest text-center">
-                  Bank-level encryption. Read-only access. No transactions stored.
+              {/* The Aligned Trust Line */}
+              <div className="flex items-center justify-center gap-2 text-slate-500 opacity-70">
+                <span className="text-sm shrink-0">🔒</span>
+                <p className="text-[11px] uppercase tracking-[0.2em] font-medium text-center">
+                  Bank-level encryption • Read-only access • No transactions stored
                 </p>
               </div>
             </div>
