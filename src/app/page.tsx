@@ -120,28 +120,30 @@ export default function SukfiWaitlist() {
           className="flex flex-col gap-4 sm:flex-row max-w-md mx-auto mt-8"
         >
           {!joined ? (
-            <>
-              <form onSubmit={handleJoinWaitlist} className="flex flex-col sm:flex-row flex-1 gap-4">
+            <div className="max-w-md mx-auto w-full flex flex-col items-center gap-6 mt-12">
+              {/* The Form Group */}
+              <form className="flex flex-col sm:flex-row w-full gap-3" onSubmit={handleJoinWaitlist}>
                 <input 
                   name="email"
                   type="email" 
-                  placeholder="enter@email.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#10B981] focus:ring-1 focus:ring-[#10B981] transition-all placeholder:text-slate-600"
+                  placeholder="Enter your email" 
+                  className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 flex-grow outline-none focus:border-emerald-500/50 transition-all text-white"
+                  required
                 />
                 <button 
                   type="submit"
-                  className="bg-[#10B981] hover:bg-[#059669] text-[#0f172a] font-bold rounded-lg px-6 py-3 transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)]"
+                  className="bg-[#00FF85] text-[#050505] font-bold px-8 py-4 rounded-xl hover:shadow-[0_0_20px_rgba(0,255,133,0.4)] transition-all whitespace-nowrap"
                 >
-                  Join Waitlist <ArrowRight size={18} />
+                  Join Waitlist
                 </button>
               </form>
-              <p className="mt-4 text-xs text-slate-500 flex items-center justify-center gap-2">
+
+              {/* The Trust Line - Now properly centered below */}
+              <p className="text-xs text-slate-500 flex items-center justify-center gap-2 max-w-[280px] text-center leading-relaxed">
                 <span className="text-emerald-500">🔒</span> 
                 Bank-level encryption. Read-only access. We never store your login or transactions.
               </p>
-            </>
+            </div>
           ) : (
             <motion.div 
               initial={{ scale: 0.9, opacity: 0 }}
