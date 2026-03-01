@@ -47,7 +47,7 @@ export default function RootLayout({
                       transition: 'box-shadow 0.2s',
                     }}
                     onClick={() => {
-                      const el = document.querySelector('.elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544');
+                      const el = document.querySelector('.elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544') as HTMLElement | null;
                       if (el) {
                         el.style.display = el.style.display === 'block' ? 'none' : 'block';
                         el.style.position = 'fixed';
