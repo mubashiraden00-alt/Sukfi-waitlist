@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from 'next/script';
+import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -64,7 +65,10 @@ export default function RootLayout({
               <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
               <div className="elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544" data-elfsight-app-lazy style={{display: 'none'}}></div>
               {/* Elfsight raw code for AI safety assistant */}
-              <script src="https://elfsightcdn.com" async></script>
+              <Script 
+                src="https://elfsightcdn.com" 
+                strategy="afterInteractive" 
+              />
               <div className="elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544" data-elfsight-app-lazy></div>
       </body>
     </html>
