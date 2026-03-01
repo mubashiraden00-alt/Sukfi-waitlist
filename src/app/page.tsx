@@ -100,7 +100,9 @@ export default function SukfiWaitlist() {
           transition={{ delay: 0.2 }}
           className="text-lg text-slate-400 leading-relaxed max-w-lg mx-auto"
         >
-          A halal finance insights tool that helps you understand and track the purity of your finances.
+          I started Sukfi after struggling to understand things like Zakat and halal income myself. This is an early project and I’m building it step by step to bring more clarity to our financial lives.
+          <br />
+          <span className="block mt-4 text-brand-green text-xs font-bold">— Mubashir Aden, Founder</span>
         </motion.p>
 
         {/* Value Grid */}
