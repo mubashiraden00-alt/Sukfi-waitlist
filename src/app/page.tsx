@@ -102,7 +102,7 @@ export default function SukfiWaitlist() {
         >
           I started Sukfi after struggling to understand things like Zakat and halal income myself. This is an early project and I’m building it step by step to bring more clarity to our financial lives.
           <br />
-          <span className="block mt-4 text-brand-green text-xs font-bold">— Mubashir Aden, Founder</span>
+          <span className="block mt-4 text-white text-base font-bold">— Mubashir Aden, Founder</span>
         </motion.p>
 
         {/* Value Grid */}
