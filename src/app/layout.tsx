@@ -1,4 +1,4 @@
-"use client";
+// Removed 'use client' to allow metadata export and fix build error
 import type { Metadata } from "next";
 import Script from 'next/script';
 import { Geist, Geist_Mono } from "next/font/google";
@@ -30,64 +30,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-                        {/* Floating Refresh Button */}
-                        <div style={{position: 'fixed', bottom: '32px', left: '32px', zIndex: 9999}}>
-                          <button
-                            style={{
-                              background: '#2563eb',
-                              color: '#fff',
-                              fontWeight: 'bold',
-                              borderRadius: '999px',
-                              padding: '14px 32px',
-                              boxShadow: '0 4px 24px rgba(37,99,235,0.18)',
-                              border: 'none',
-                              cursor: 'pointer',
-                              fontSize: '1rem',
-                              letterSpacing: '0.08em',
-                              transition: 'box-shadow 0.2s',
-                            }}
-                            onClick={() => window.location.reload()}
-                          >
-                            Refresh Page
-                          </button>
-                        </div>
-                {/* Floating AI Chat Button */}
-                <div style={{position: 'fixed', bottom: '32px', right: '32px', zIndex: 9999}}>
-                  <button
-                    id="ai-chat-toggle"
-                    style={{
-                      background: '#00FF85',
-                      color: '#050505',
-                      fontWeight: 'bold',
-                      borderRadius: '999px',
-                      padding: '14px 32px',
-                      boxShadow: '0 4px 24px rgba(0,255,133,0.18)',
-                      border: 'none',
-                      cursor: 'pointer',
-                      fontSize: '1rem',
-                      letterSpacing: '0.08em',
-                      transition: 'box-shadow 0.2s',
-                    }}
-                    onClick={() => {
-                      const el = document.querySelector('.elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544') as HTMLElement | null;
-                      if (el) {
-                        el.style.display = el.style.display === 'block' ? 'none' : 'block';
-                        el.style.position = 'fixed';
-                        el.style.bottom = '90px';
-                        el.style.right = '32px';
-                        el.style.zIndex = '9999';
-                      }
-                    }}
-                  >
-                    AI Chat
-                  </button>
-                </div>
-                {/* Elfsight AI Widget (initially hidden, toggled by button) */}
-              <Script 
-                src="https://elfsightcdn.com" 
-                strategy="afterInteractive" 
-              />
-              <div className="elfsight-app-cd2466c7-0db9-4f43-8e33-781379e56544" data-elfsight-app-lazy></div>
       </body>
     </html>
   );
