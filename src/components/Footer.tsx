@@ -13,7 +13,7 @@ export const Footer = () => (
       </div>
 
       <div className="text-xs text-gray-600 text-center md:text-right">
-        <p>© 2024 Sukfi. All rights reserved.</p>
+        <p>© 2026 Sukfi. All rights reserved.</p>
         <p className="mt-1 italic">Sukfi is a financial tool, not a licensed investment advisor.</p>
       </div>
     </div>
