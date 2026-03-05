@@ -30,6 +30,27 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+                        {/* Floating Refresh Button */}
+                        <div style={{position: 'fixed', bottom: '32px', left: '32px', zIndex: 9999}}>
+                          <button
+                            style={{
+                              background: '#2563eb',
+                              color: '#fff',
+                              fontWeight: 'bold',
+                              borderRadius: '999px',
+                              padding: '14px 32px',
+                              boxShadow: '0 4px 24px rgba(37,99,235,0.18)',
+                              border: 'none',
+                              cursor: 'pointer',
+                              fontSize: '1rem',
+                              letterSpacing: '0.08em',
+                              transition: 'box-shadow 0.2s',
+                            }}
+                            onClick={() => window.location.reload()}
+                          >
+                            Refresh Page
+                          </button>
+                        </div>
                 {/* Floating AI Chat Button */}
                 <div style={{position: 'fixed', bottom: '32px', right: '32px', zIndex: 9999}}>
                   <button
