@@ -151,12 +151,10 @@ export default function SukfiWaitlist() {
                 </button>
               </form>
 
-              {/* 2. High-Visibility Trust Line (Aligned & Brighter) */}
-              <div className="flex items-center justify-center gap-3 text-slate-300">
-                <span className="text-emerald-500 text-lg shrink-0">🔒</span>
-                <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-center leading-tight">
-                  Bank-level encryption <span className="mx-2 text-slate-600">•</span> Read-only access <span className="mx-2 text-slate-600">•</span> No transactions stored
-                </p>
+              {/* Restore First 1000 users card above form */}
+              <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center mb-6">
+                <span className="text-emerald-500 font-bold mb-1">FREE ACCESS</span>
+                <span>First 1000 users only</span>
               </div>
               
             </div>
