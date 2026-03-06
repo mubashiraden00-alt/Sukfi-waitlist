@@ -64,6 +64,24 @@ export default function SukfiWaitlist() {
       <div className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] bg-[#10B981] rounded-full opacity-5 blur-[100px] pointer-events-none" />
       
       <div className="z-10 max-w-2xl w-full text-center space-y-8">
+        {/* Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="flex items-center justify-center gap-2 mb-8 relative group"
+        >
+          {/* The Neon Glow Layer */}
+          <div className="absolute inset-0 bg-[#10B981] opacity-20 blur-xl rounded-full" />
+          {/* The Content */}
+          <div className="relative flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#10B981]/30 bg-[#0f172a]/50 backdrop-blur-sm shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+            <ShieldCheck size={16} className="text-[#10B981] drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
+            <span className="text-sm font-medium tracking-wide text-[#10B981] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">
+              Halal Compliance Engine
+            </span>
+          </div>
+        </motion.div>
+        {/* ...existing code... */}
+      </div>
         
         {/* Badge */}
         <motion.div
@@ -170,29 +188,27 @@ export default function SukfiWaitlist() {
         </motion.div>
         
         {/* Footer */}
-       <motion.div 
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.6 }}
-  className="w-full"
-
-           className="pt-12 flex items-center justify-center gap-6 text-slate-600 text-sm"
-        >
-          <div className="flex flex-col">
-  <span className="text-gray-500 text-[10px] uppercase tracking-widest mb-1">
-    Methodology
-  </span>
-  <span className="text-gray-300 font-medium">
-    AAOIFI Standard 21 & 59
-  </span>
-</div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="pt-12 flex items-center justify-center gap-6 text-slate-600 text-sm"
+      >
+        <div className="flex flex-col">
+          <span className="text-gray-500 text-[10px] uppercase tracking-widest mb-1">
+            Methodology
+          </span>
+          <span className="text-gray-300 font-medium">
+            AAOIFI Standard 21 & 59
+          </span>
+        </div>
+      </motion.div>
 
       {/* Security & How It Works Section */}
       <HowItWorks />
       {/* Founder's Mission Note */}
       <Mission />
       {/* Human Footer & Legal Links */}
-      <Footer />
     </main>
   );
 }
