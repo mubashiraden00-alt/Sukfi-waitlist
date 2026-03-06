@@ -102,14 +102,14 @@ export default function SukfiWaitlist() {
         >
           I started Sukfi after struggling to understand things like Zakat and halal income myself. This is an early project and I’m building it step by step to bring more clarity to our financial lives.
           <br />
-          <span className="block mt-4 text-white text-base font-bold">— Mubashir Aden, Founder</span>
+          <span className="block mt-4 text-white text-base font-bold">— Mubashir, Building Sukfi in Public </span>
         </motion.p>
 
         {/* Value Grid */}
         <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-400">
           <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
             <span className="text-emerald-500 font-bold mb-1">FREE ACCESS</span>
-            <span>First 500 users only</span>
+            <span>First 1000 users only</span>
           </div>
           <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
             <span className="text-emerald-500 font-bold mb-1">INFLUENCE</span>
@@ -164,7 +164,7 @@ export default function SukfiWaitlist() {
             >
               <p className="text-[#10B981] font-medium mb-2 uppercase tracking-widest text-xs">Position Secured</p>
               <p className="text-4xl font-bold text-white mb-1">#{position.toLocaleString()}</p>
-              <p className="text-sm text-slate-400 mt-2">Refer 3 friends to unlock <span className="text-[#10B981]">Early Access</span>.</p>
+              <p className="text-sm text-slate-400 mt-2"> <span className="text-[#10B981]">Early Access</span>.</p>
             </motion.div>
           )}
         </motion.div>
@@ -179,8 +179,7 @@ export default function SukfiWaitlist() {
         >
             <span>Compatible with</span>
             <div className="flex gap-4 opacity-50 grayscale">
-               <span className="font-bold text-slate-400">PLAID</span>
-               <span className="font-bold text-slate-400">ZOYA</span>
+              <span>Built on AAOIFI Standards</span>
             </div>
         </motion.div>
 
