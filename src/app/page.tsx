@@ -45,7 +45,7 @@ export default function SukfiWaitlist() {
           .from('waitlist')
           .select('*', { count: 'exact', head: true });
 
-        {/* Signup Form - moved up */}
+        {/* Signup Form - single instance */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function SukfiWaitlist() {
           )}
         </motion.div>
 
-        {/* Feature Cards - moved down */}
+        {/* Feature Cards - single instance at bottom */}
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-center mb-8 text-white">Why you should join</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-400">
