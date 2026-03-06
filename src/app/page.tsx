@@ -177,17 +177,6 @@ export default function SukfiWaitlist() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6 }}
         className="pt-12 flex items-center justify-center gap-6 text-slate-600 text-sm"
-      >
-        <div className="flex flex-col">
-          <span className="text-gray-500 text-[10px] uppercase tracking-widest mb-1">
-            Methodology
-          </span>
-          <span className="text-gray-300 font-medium">
-            AAOIFI Standard 21 & 59
-          </span>
-        </div>
-      </motion.div>
-
       {/* Security & How It Works Section */}
       <HowItWorks />
       {/* Founder's Mission Note */}
