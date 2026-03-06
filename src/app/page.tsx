@@ -186,7 +186,6 @@ export default function SukfiWaitlist() {
   </span>
 </div>
 
-      </div>
       {/* Security & How It Works Section */}
       <HowItWorks />
       {/* Founder's Mission Note */}
