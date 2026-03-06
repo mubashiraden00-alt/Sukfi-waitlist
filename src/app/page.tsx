@@ -170,10 +170,11 @@ export default function SukfiWaitlist() {
         </motion.div>
         
         {/* Footer */}
-       </motion.div>  {/
-       initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
+       <motion.div 
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6 }}
+  className="w-full"
 
            className="pt-12 flex items-center justify-center gap-6 text-slate-600 text-sm"
         >
