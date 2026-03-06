@@ -188,6 +188,7 @@ export default function SukfiWaitlist() {
       {/* Founder's Mission Note */}
       <Mission />
       {/* Human Footer & Legal Links */}
+      </div>
     </main>
   );
 }
