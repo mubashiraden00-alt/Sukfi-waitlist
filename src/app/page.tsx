@@ -69,16 +69,7 @@ export default function SukfiWaitlist() {
       </div>
         
         {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="flex items-center justify-center gap-2 mb-8 relative group"
-        >
-          {/* The Neon Glow Layer */}
-          <div className="absolute inset-0 bg-[#10B981] opacity-20 blur-xl rounded-full" />
-          
-          {/* The Content */}
-          <div className="relative flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#10B981]/30 bg-[#0f172a]/50 backdrop-blur-sm shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+        {/* Removed project description and author note */}
             <ShieldCheck size={16} className="text-[#10B981] drop-shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
             <span className="text-sm font-medium tracking-wide text-[#10B981] drop-shadow-[0_0_5px_rgba(16,185,129,0.5)]">
               Halal Compliance Engine
@@ -87,11 +78,11 @@ export default function SukfiWaitlist() {
         </motion.div>
 
         {/* Hero Text */}
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/60"
+          className="text-5xl md:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/60 mb-12 mt-8"
         >
           Is your portfolio <br />
           <span className="text-[#10B981] drop-shadow-[0_0_15px_rgba(16,185,129,0.3)]">truly pure?</span>
