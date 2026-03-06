@@ -177,9 +177,6 @@ export default function SukfiWaitlist() {
         
         {/* Footer */}
         {/* If you want a footer, add it here. */}
-        <HowItWorks />
-        <Mission />
-        {/* Human Footer & Legal Links */}
       </div>
     </main>
   );
