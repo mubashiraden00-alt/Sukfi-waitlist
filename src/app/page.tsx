@@ -102,15 +102,22 @@ export default function SukfiWaitlist() {
           <span className="block mt-4 text-white text-base font-bold">— Mubashir, Building Sukfi in Public </span>
         </motion.p>
 
-        {/* Value Grid */}
-        <div className="mt-10 grid grid-cols-2 gap-4 text-sm text-slate-400">
-          <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
-            <span className="text-emerald-500 font-bold mb-1">FREE ACCESS</span>
-            <span>First 1000 users only</span>
+        {/* Value Sandwich Grid */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-400">
+          {/* Card 1: Pain Killer */}
+          <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex flex-col items-center">
+            <span className="text-emerald-500 font-bold mb-1">Smart Hawl Tracking</span>
+            <span>Stop tracking dates in spreadsheets. We monitor your Nisab daily and alert you exactly when your Zakat year ends, so you never overpay or underpay.</span>
           </div>
-          <div className="bg-white/5 border border-white/10 p-3 rounded-lg flex flex-col items-center">
-            <span className="text-emerald-500 font-bold mb-1">INFLUENCE</span>
-            <span>Shape the Roadmap</span>
+          {/* Card 2: Authority */}
+          <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex flex-col items-center">
+            <span className="text-emerald-500 font-bold mb-1">Deep Purification</span>
+            <span>Most calculators treat crypto as cash. We separate 'Principal' from 'Staking Rewards' to apply the correct AAOIFI purification percentages automatically.</span>
+          </div>
+          {/* Card 3: Safety */}
+          <div className="bg-white/5 border border-white/10 p-4 rounded-lg flex flex-col items-center">
+            <span className="text-emerald-500 font-bold mb-1">Zero-Knowledge Privacy</span>
+            <span>We use industry-standard 256-bit AES encryption. Your data remains local to your session. We don't want your data. Calculations happen locally on your device. No signup required to test, no bank credentials stored.</span>
           </div>
         </div>
 
