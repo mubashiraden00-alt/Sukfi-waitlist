@@ -177,11 +177,14 @@ export default function SukfiWaitlist() {
 
            className="pt-12 flex items-center justify-center gap-6 text-slate-600 text-sm"
         >
-            <span>Compatible with</span>
-            <div className="flex gap-4 opacity-50 grayscale">
-              <span>Built on AAOIFI Standards</span>
-            </div>
-        </motion.div>
+          <div className="flex flex-col">
+  <span className="text-gray-500 text-[10px] uppercase tracking-widest mb-1">
+    Methodology
+  </span>
+  <span className="text-gray-300 font-medium">
+    AAOIFI Standard 21 & 59
+  </span>
+</div>
 
       </div>
       {/* Security & How It Works Section */}
